@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <title>Monocular SLAM Densification</title>
+    <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
+    <link href="css/styles.css" rel="stylesheet" />
+    <link href="css/custom.css" rel="stylesheet" /> 
+    <!-- <link href="css/button.css" rel="stylesheet" />  -->
+
+    <!-- Pixel Font from Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+    <link href="https://unpkg.com/nes.css/css/nes.css" rel="stylesheet" />
+</head>
+
+<body>
+    <div class="container-fluid main-page">
+        <div class="title-area main-title text-center">
+            <h1>Monocular SLAM Densification</h1>
+            <p>
+                This page provides qualitative results illustrating our work on Monocular SLAM Densification. 
+                In this example, we build on ORB-SLAM 3 which provides precise camera pose estimation and triangulate sparse depth with metric scale. 
+                For the densification, we leverage ZeroDepth model to predict a dense depth map for every keyframe. 
+                We assume that this DNN predicts depth up to a global factor, and use the SLAM outputs to correct the scale. 
+                Lastly, we integrate Voxblox to build a voxel map iteratively from the resulting scaled dense depth maps and their corresponding estimated camera pose. Further details are provided in the publishes papers.
+            </p>
+        </div>
+
+        <div class="category-container d-flex">
+            <div class="category mode-category nes-container is-dark with-title">
+                <h2 class="title">Monocular</h2><h3>(our)</h3>
+                <button class="nes-btn is-warning" role="button" onclick="location.href='monocular-merged.html';">Merged</button>
+                <button class="nes-btn is-success" role="button" onclick="location.href='monocular-fast.html';">Fast</button>
+            </div>
+
+            <div class="category mode-category nes-container is-dark with-title">
+                <h2 class="title">Stereo</h2><h3>(reference)</h3>
+                <button class="nes-btn is-warning" role="button" onclick="location.href='stereo-merged.html';">Merged</button>
+                <button class="nes-btn is-success" role="button" onclick="location.href='stereo-fast.html';">Fast</button>
+            </div>
+
+        </div>
+
+    </div>
+      
+</body>
+</html>

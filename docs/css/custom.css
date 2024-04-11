@@ -1,0 +1,95 @@
+body, html {
+    height: 100%;
+    margin: 0;
+    background-color: #000000; /* Sets the background to black */
+    color: #FFFFFF;
+}
+
+.main-page {
+    height: 100vh; /* Prevents scrolling by setting the height to the viewport height */
+    display: flex;
+    flex-direction: column;
+    /* justify-content: center; */
+    align-items: center;
+    background-color: #000000; /* Sets the background to black */
+    color: #FFFFFF;
+}
+
+.title-area {
+    justify-content: center;
+    /* background-color: #ff7171; */
+}
+
+.main-title {
+    margin-top: 5%;
+    margin-bottom: 7.0%;
+}
+
+.sub-page-title {
+    margin-top: 2%;
+    margin-bottom: 3.0%;
+}
+
+.title-area h1 {
+    font-size: 70px;
+    font-family: "Press Start 2P";
+    margin-bottom: 30px;
+}
+
+.title-area p {
+    width: 850px;
+    display: inline-block;
+    font-size: 12px;
+    font-family: "Press Start 2P";
+    color:aquamarine;
+    /* background-color: #3dc9aa; */
+}
+
+.category-container {
+    display: flex;
+    justify-content: space-evenly;
+    width: 100%;
+}
+
+.category {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: black !important;
+}
+
+.mode-category {
+    width: 350px;
+}
+
+.video-category {
+    width: 45vw;
+}
+
+.category h2 {
+    font-family: "Press Start 2P";
+    font-size: 20px !important;
+    background-color: black !important;
+    margin-top: -2.25rem !important;
+    margin-bottom: 0.5rem !important;
+}
+
+.category h3 {
+    font-family: "Press Start 2P";
+    font-size: 12px;
+}
+
+.category img {
+    width: 80%;
+    margin: 10px;
+    transition: transform 0.3s ease;
+}
+
+.category img:hover {
+    transform: scale(1.05); /* Slight zoom on hover */
+}
+
+.category button {
+    margin-top: 30px;
+    /* margin-bottom: 20px; */
+}
