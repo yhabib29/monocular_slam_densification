@@ -26,6 +26,7 @@
                 For the densification, we leverage the <a class="pub-link" href="https://doi.org/10.1109/ICCV51070.2023.00847" target="_blank">ZeroDepth</a> model to predict a dense depth map for every keyframe. 
                 We assume that this DNN predicts depth up to a global factor, and use the SLAM outputs to correct the scale. 
                 Lastly, we integrate <a class="pub-link" href="https://doi.org/10.1109/IROS.2017.8202315" target="_blank">Voxblox</a> to build a voxel map iteratively from the resulting scaled dense depth maps and their corresponding estimated camera pose. 
+                These experiments were carried out on the <a class="pub-link" href="https://doi.org/10.1177/0278364915620033" target="_blank">EuRoC</a> <i>V1_01</i> sequence and we displayed the 3D scan of the room in white.
                 Further details are provided in the publishes papers (see <a class="pub-link" href="publications.html">Publications</a>).
             </p>
         </div>
