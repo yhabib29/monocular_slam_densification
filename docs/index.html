@@ -22,10 +22,11 @@
             <h1>Monocular SLAM Densification</h1>
             <p>
                 This page provides qualitative results illustrating our work on Monocular SLAM Densification. 
-                In this example, we build on ORB-SLAM 3 which provides precise camera pose estimation and triangulate sparse depth with metric scale. 
-                For the densification, we leverage ZeroDepth model to predict a dense depth map for every keyframe. 
+                In this example, we build on <a class="pub-link" href="https://doi.org/10.1109/TRO.2021.3075644" target="_blank">ORB-SLAM 3</a> which provides precise camera pose estimation and triangulate sparse depth with metric scale. 
+                For the densification, we leverage the <a class="pub-link" href="https://doi.org/10.1109/ICCV51070.2023.00847" target="_blank">ZeroDepth</a> model to predict a dense depth map for every keyframe. 
                 We assume that this DNN predicts depth up to a global factor, and use the SLAM outputs to correct the scale. 
-                Lastly, we integrate Voxblox to build a voxel map iteratively from the resulting scaled dense depth maps and their corresponding estimated camera pose. Further details are provided in the publishes papers.
+                Lastly, we integrate <a class="pub-link" href="https://doi.org/10.1109/IROS.2017.8202315" target="_blank">Voxblox</a> to build a voxel map iteratively from the resulting scaled dense depth maps and their corresponding estimated camera pose. 
+                Further details are provided in the publishes papers (see <a class="pub-link" href="publications.html">Publications</a>).
             </p>
         </div>
 

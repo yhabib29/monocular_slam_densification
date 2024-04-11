@@ -41,8 +41,18 @@ body, html {
     display: inline-block;
     font-size: 12px;
     font-family: "Press Start 2P";
-    color:aquamarine;
+    color:rgb(255, 255, 255);
+    text-align: justify;
     /* background-color: #3dc9aa; */
+}
+
+.pub-link {
+    color: orange;
+    text-decoration: none;
+}
+
+.pub-link:hover {
+    color: orange;
 }
 
 .category-container {
